@@ -3,12 +3,20 @@
 Based on meanbee/docker magento this is a magento 1 multiproject dev environment.
 Feel free to use and extend
 
-- [`7.0-apache` (*7.0/apache/Dockerfile*)](https://github.com/meanbee/docker-magento/blob/master/7.0/apache/Dockerfile)
-- [`7.0-cli` (*7.0/cli/Dockerfile*)](https://github.com/meanbee/docker-magento/blob/master/7.0/cli/Dockerfile)
-- [`7.0-fpm` (*7.0/fpm/Dockerfile*)](https://github.com/meanbee/docker-magento/blob/master/7.0/fpm/Dockerfile)
-- [`5.6-apache` (*5.6/apache/Dockerfile*)](https://github.com/meanbee/docker-magento/blob/master/5.6/apache/Dockerfile)
-- [`5.6-cli` (*5.6/cli/Dockerfile*)](https://github.com/meanbee/docker-magento/blob/master/5.6/cli/Dockerfile)
-- [`5.6-fpm` (*5.6/fpm/Dockerfile*)](https://github.com/meanbee/docker-magento/blob/master/5.6/fpm/Dockerfile)
+## prerequisits
+- linux / ubuntu 16.04
+- docker installed
+- docker-composer installed
+
+
+# Features
+- PHP5.6 / 7.0
+- Mysql 5.6
+- Redis
+- Redis Frontend
+- Cron machine
+- Cli machine
+
 # Usage
 
 ## Start containers
@@ -62,3 +70,13 @@ The `cli` images have a number of useful Magento tools pre-installed:
 - `docker exec -it <container> /bin/bash`
 - change to your projectroot (src/project1) and hit
 - `phpunit`
+
+
+### Reach magento frontend
+- http://127.0.0.1:8080/src/project1
+
+### Reach redis cache management frontend
+- http://127.0.0.1:8081
+
+
+
