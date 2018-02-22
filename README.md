@@ -15,11 +15,16 @@ Feel free to use and extend
 
 See [docker-compose.yml](docker-compose.yml) for a sample configuration.
 
-###Install composer dependencies
+### Install composer dependencies
 - change to your container:
 - `docker exec -it <container> /bin/bash`
 - change to your projectroot (src/project1) and hit
 - `n98-magerun.phar`
+
+## Database
+`docker exec -it <mysql container>` /bin/bash`
+`mysql -h db -uroot -ptoor`
+
 
 ## Xdebug
 
@@ -45,12 +50,15 @@ The `cli` images have a number of useful Magento tools pre-installed:
 
 # PHPUnit
 ### You can use preinstalled Ecomdev_PHP_Unit
-- change to your container: docker exec -it <container> /bin/bash
-- change to your projectroot (src/project1) and hit phpunit
 
+### Create a tesdatabase "magento_test"
+- `docker exec -it <mysql container> /bin/bash`
+- `mysql -h db -uroot -ptoor`
+- `create database magento_test`
+- `exit`
+- `exit`
 
-
-All of the installed tools run in the working directory of the container, so don't forget to set it using the `working_dir` service configuration option in `docker-compose.yml` or the `--workdir` parameter to `docker run`.
-
-Some of the commands use additional environment variables for configuration:
-
+- change to your container:
+- `docker exec -it <container> /bin/bash`
+- change to your projectroot (src/project1) and hit
+- `phpunit`
