@@ -1,0 +1,12 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'cms/block', 'name' => 'cms_footer_links', 'before' => 'footer_links'), 'cms_footer_links', 'footer', array()), false);
+$this->addItemRelation($item, 'cms_footer_links');
+$this->addItemRelation($item, 'footer');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setBlockId'), 'cms_footer_links', function ($block) { return $block->setBlockId('footer_links_company'); }, array(0 => 'footer')), false);
+$this->addItemRelation($item, 'cms_footer_links');
+$this->addItemRelation($item, 'footer');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'cms/block', 'name' => 'cms_footer_links_sm', 'after' => 'footer_links2'), 'cms_footer_links_sm', 'footer', array()), false);
+$this->addItemRelation($item, 'cms_footer_links_sm');
+$this->addItemRelation($item, 'footer');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setBlockId'), 'cms_footer_links_sm', function ($block) { return $block->setBlockId('footer_links_sm'); }, array(0 => 'footer')), false);
+$this->addItemRelation($item, 'cms_footer_links_sm');
+$this->addItemRelation($item, 'footer');

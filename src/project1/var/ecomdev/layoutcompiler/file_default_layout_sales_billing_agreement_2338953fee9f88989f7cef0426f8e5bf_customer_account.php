@@ -1,0 +1,2 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addLink', 'translate' => 'label'), 'customer_account_navigation', function ($block) { return $block->addLink('billing_agreements', 'sales/billing_agreement/', Mage::helper('core')->__('Billing Agreements')); }, array()), false);
+$this->addItemRelation($item, 'customer_account_navigation');

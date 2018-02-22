@@ -1,0 +1,16 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setTemplate'), 'root', function ($block) { return $block->setTemplate('page/2columns-right.phtml'); }, array()), false);
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setTitle', 'translate' => 'title', 'module' => 'catalogsearch'), 'head', function ($block) { return $block->setTitle(Mage::helper('catalogsearch')->__('Advanced Search')); }, array()), false);
+$this->addItemRelation($item, 'head');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItem'), 'head', function ($block) { return $block->addItem('js_css', 'calendar/calendar-win2k-1.css', '', ''); }, array()), false);
+$this->addItemRelation($item, 'head');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItem'), 'head', function ($block) { return $block->addItem('js', 'calendar/calendar.js', ''); }, array()), false);
+$this->addItemRelation($item, 'head');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItem'), 'head', function ($block) { return $block->addItem('js', 'calendar/calendar-setup.js', ''); }, array()), false);
+$this->addItemRelation($item, 'head');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'catalogsearch/advanced_form', 'name' => 'catalogsearch_advanced_form', 'template' => 'catalogsearch/advanced/form.phtml'), 'catalogsearch_advanced_form', 'content', array()), false);
+$this->addItemRelation($item, 'catalogsearch_advanced_form');
+$this->addItemRelation($item, 'content');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'core/html_calendar', 'name' => 'html_calendar', 'as' => 'html_calendar', 'template' => 'page/js/calendar.phtml'), 'html_calendar', 'content', array()), false);
+$this->addItemRelation($item, 'html_calendar');
+$this->addItemRelation($item, 'content');

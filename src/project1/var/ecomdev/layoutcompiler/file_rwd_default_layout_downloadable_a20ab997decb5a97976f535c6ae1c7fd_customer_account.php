@@ -1,0 +1,2 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addLink', 'translate' => 'label', 'module' => 'downloadable'), 'customer_account_navigation', function ($block) { return $block->addLink('downloadable_products', 'downloadable/customer/products', Mage::helper('downloadable')->__('My Downloadable Products')); }, array()), false);
+$this->addItemRelation($item, 'customer_account_navigation');

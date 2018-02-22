@@ -1,0 +1,2 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItemRender'), 'cart_sidebar', function ($block) { return $block->addItemRender('bundle', 'bundle/checkout_cart_item_renderer', 'checkout/cart/sidebar/default.phtml'); }, array()), false);
+$this->addItemRelation($item, 'cart_sidebar');

@@ -1,0 +1,3 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/catalog_product_composite_fieldset_configurable', 'name' => 'product.composite.fieldset.configurable', 'before' => 'product.composite.fieldset.options', 'template' => 'catalog/product/composite/fieldset/configurable.phtml'), 'product.composite.fieldset.configurable', 'product.composite.fieldset', array()), false);
+$this->addItemRelation($item, 'product.composite.fieldset.configurable');
+$this->addItemRelation($item, 'product.composite.fieldset');

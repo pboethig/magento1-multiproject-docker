@@ -1,0 +1,16 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setTemplate'), 'checkout.onepage.login', function ($block) { return $block->setTemplate('persistent/checkout/onepage/login.phtml'); }, array()), false);
+$this->addItemRelation($item, 'checkout.onepage.login');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'persistent/form_remember', 'name' => 'persistent.remember.me', 'template' => 'persistent/remember_me.phtml'), 'persistent.remember.me', 'checkout.onepage.login', array()), false);
+$this->addItemRelation($item, 'persistent.remember.me');
+$this->addItemRelation($item, 'checkout.onepage.login');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'core/template', 'name' => 'persistent.remember.me.tooltip', 'template' => 'persistent/remember_me_tooltip.phtml'), 'persistent.remember.me.tooltip', 'checkout.onepage.login', array()), false);
+$this->addItemRelation($item, 'persistent.remember.me.tooltip');
+$this->addItemRelation($item, 'checkout.onepage.login');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setTemplate'), 'checkout.onepage.billing', function ($block) { return $block->setTemplate('persistent/checkout/onepage/billing.phtml'); }, array()), false);
+$this->addItemRelation($item, 'checkout.onepage.billing');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'persistent/form_remember', 'name' => 'persistent.remember.me', 'template' => 'persistent/remember_me.phtml'), 'persistent.remember.me', 'checkout.onepage.billing', array()), false);
+$this->addItemRelation($item, 'persistent.remember.me');
+$this->addItemRelation($item, 'checkout.onepage.billing');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'core/template', 'name' => 'persistent.remember.me.tooltip', 'template' => 'persistent/remember_me_tooltip.phtml'), 'persistent.remember.me.tooltip', 'checkout.onepage.billing', array()), false);
+$this->addItemRelation($item, 'persistent.remember.me.tooltip');
+$this->addItemRelation($item, 'checkout.onepage.billing');

@@ -1,0 +1,11 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/sales_transactions_detail', 'name' => 'sales_transactions.detail', 'template' => 'sales/transactions/detail.phtml'), 'sales_transactions.detail', 'content', array()), false);
+$this->addItemRelation($item, 'sales_transactions.detail');
+$this->addItemRelation($item, 'content');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/sales_transactions_detail_grid', 'name' => 'sales_transactions.detail.grid', 'as' => 'detail_grid'), 'sales_transactions.detail.grid', 'sales_transactions.detail', array(0 => 'content')), false);
+$this->addItemRelation($item, 'sales_transactions.detail.grid');
+$this->addItemRelation($item, 'sales_transactions.detail');
+$this->addItemRelation($item, 'content');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/sales_transactions_child_grid', 'name' => 'sales_transactions.child.grid', 'as' => 'child_grid'), 'sales_transactions.child.grid', 'sales_transactions.detail', array(0 => 'content')), false);
+$this->addItemRelation($item, 'sales_transactions.child.grid');
+$this->addItemRelation($item, 'sales_transactions.detail');
+$this->addItemRelation($item, 'content');

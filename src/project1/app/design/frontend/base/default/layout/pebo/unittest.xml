@@ -1,0 +1,22 @@
+<?xml version="1.0"?>   
+<layout version="0.1.0">   
+  <unittest_index_index>
+    <reference name="root">   
+      <action method="setTemplate"><template>page/1column.phtml</template></action>
+    </reference>   
+    <reference name="content">
+      <block type="unittest/index" name="pebo/unittest_index" template="pebo/unittest/index.phtml"/>
+    </reference>   
+  </unittest_index_index>
+
+  <unittest_index_test>
+    <reference name="root">
+      <action method="setTemplate"><template>page/1column.phtml</template></action>
+    </reference>
+    <reference name="content">
+      <block type="unittest/index" name="pebo/unittest_test" template="pebo/unittest/test.phtml"/>
+    </reference>
+  </unittest_index_test>
+
+</layout>
+	

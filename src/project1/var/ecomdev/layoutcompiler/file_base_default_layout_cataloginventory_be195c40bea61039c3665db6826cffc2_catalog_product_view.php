@@ -1,0 +1,3 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'cataloginventory/qtyincrements', 'name' => 'product.info.extrahint.qtyincrements', 'template' => 'cataloginventory/qtyincrements.phtml'), 'product.info.extrahint.qtyincrements', 'product.info.extrahint', array()), false);
+$this->addItemRelation($item, 'product.info.extrahint.qtyincrements');
+$this->addItemRelation($item, 'product.info.extrahint');

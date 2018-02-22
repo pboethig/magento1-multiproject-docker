@@ -1,0 +1,2 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItemRender'), 'invoice_items', function ($block) { return $block->addItemRender('downloadable', 'downloadable/sales_order_item_renderer_downloadable', 'downloadable/sales/order/invoice/items/renderer/downloadable.phtml'); }, array()), false);
+$this->addItemRelation($item, 'invoice_items');

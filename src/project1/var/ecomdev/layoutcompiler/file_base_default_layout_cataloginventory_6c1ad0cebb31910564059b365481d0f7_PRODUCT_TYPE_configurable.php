@@ -1,0 +1,3 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'cataloginventory/stockqty_type_configurable', 'template' => 'cataloginventory/stockqty/composite.phtml', '_ecomdev_system_option' => array('is_anonymous' => true)), 'ANONYMOUS_5a8c37e5eff7c7.08136877', 'product.info.configurable.extra', array()), false);
+$this->addItemRelation($item, 'ANONYMOUS_5a8c37e5eff7c7.08136877');
+$this->addItemRelation($item, 'product.info.configurable.extra');

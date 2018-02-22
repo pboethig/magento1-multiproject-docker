@@ -1,0 +1,1 @@
+<?php $this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Include('adminhtml_cms_block_edit'));

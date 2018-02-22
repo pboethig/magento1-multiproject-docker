@@ -1,0 +1,11 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'tag/product_list', 'name' => 'product_tag_list', 'before' => '-', 'template' => 'tag/list.phtml'), 'product_tag_list', 'product.info.additional', array()), false);
+$this->addItemRelation($item, 'product_tag_list');
+$this->addItemRelation($item, 'product.info.additional');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'page/html_wrapper', 'name' => 'product.tag.list.list.before', 'as' => 'list_before', 'translate' => 'label'), 'product.tag.list.list.before', 'product_tag_list', array(0 => 'product.info.additional')), false);
+$this->addItemRelation($item, 'product.tag.list.list.before');
+$this->addItemRelation($item, 'product_tag_list');
+$this->addItemRelation($item, 'product.info.additional');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setMayBeInvisible'), 'product.tag.list.list.before', function ($block) { return $block->setMayBeInvisible('1'); }, array(0 => 'product.info.additional', 1 => 'product_tag_list')), false);
+$this->addItemRelation($item, 'product.tag.list.list.before');
+$this->addItemRelation($item, 'product.info.additional');
+$this->addItemRelation($item, 'product_tag_list');

@@ -1,0 +1,3 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'downloadable/checkout_success', 'name' => 'downloadable.checkout.success', 'template' => 'downloadable/checkout/success.phtml'), 'downloadable.checkout.success', 'checkout.success', array()), false);
+$this->addItemRelation($item, 'downloadable.checkout.success');
+$this->addItemRelation($item, 'checkout.success');

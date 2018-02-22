@@ -1,0 +1,2 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItemRender'), 'sales.order.print.invoice', function ($block) { return $block->addItemRender('bundle', 'bundle/sales_order_items_renderer', 'bundle/sales/order/invoice/items/renderer.phtml'); }, array()), false);
+$this->addItemRelation($item, 'sales.order.print.invoice');

@@ -1,0 +1,13 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'paypaluk/express_shortcut', 'name' => 'checkout.cart.methods.paypaluk_express.top', 'before' => '-', 'template' => 'paypal/express/shortcut.phtml'), 'checkout.cart.methods.paypaluk_express.top', 'checkout.cart.top_methods', array()), false);
+$this->addItemRelation($item, 'checkout.cart.methods.paypaluk_express.top');
+$this->addItemRelation($item, 'checkout.cart.top_methods');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setIsQuoteAllowed'), 'checkout.cart.methods.paypaluk_express.top', function ($block) { return $block->setIsQuoteAllowed('1'); }, array(0 => 'checkout.cart.top_methods')), false);
+$this->addItemRelation($item, 'checkout.cart.methods.paypaluk_express.top');
+$this->addItemRelation($item, 'checkout.cart.top_methods');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'paypaluk/express_shortcut', 'name' => 'checkout.cart.methods.paypaluk_express.bottom', 'before' => '-', 'template' => 'paypal/express/shortcut.phtml'), 'checkout.cart.methods.paypaluk_express.bottom', 'checkout.cart.methods', array()), false);
+$this->addItemRelation($item, 'checkout.cart.methods.paypaluk_express.bottom');
+$this->addItemRelation($item, 'checkout.cart.methods');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setIsQuoteAllowed'), 'checkout.cart.methods.paypaluk_express.bottom', function ($block) { return $block->setIsQuoteAllowed('1'); }, array(0 => 'checkout.cart.methods')), false);
+$this->addItemRelation($item, 'checkout.cart.methods.paypaluk_express.bottom');
+$this->addItemRelation($item, 'checkout.cart.methods');
+$this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Include('SHORTCUT_uk_popup'));

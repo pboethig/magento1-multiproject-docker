@@ -1,0 +1,4 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'removeLinkByUrl'), 'top.links', function ($block) { return $block->removeLinkByUrl(Mage::helper('customer')->getRegisterUrl()); }, array()), false);
+$this->addItemRelation($item, 'top.links');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addLink', 'translate' => 'label title', 'module' => 'customer'), 'top.links', function ($block) { return $block->addLink(Mage::helper('customer')->__('Log Out'), Mage::helper('customer')->getLogoutUrl(), Mage::helper('customer')->__('Log Out'), '', '', '100'); }, array()), false);
+$this->addItemRelation($item, 'top.links');

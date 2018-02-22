@@ -1,0 +1,15 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'core/text_list', 'name' => 'root', 'output' => 'toHtml'), 'root', null, array()), false);
+$this->addItemRelation($item, 'root');
+$this->addItemRelation($item, NULL);
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/catalog_product_edit_tab_related', 'name' => 'catalog.product.edit.tab.related'), 'catalog.product.edit.tab.related', 'root', array()), false);
+$this->addItemRelation($item, 'catalog.product.edit.tab.related');
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/widget_grid_serializer', 'name' => 'related_grid_serializer'), 'related_grid_serializer', 'root', array()), false);
+$this->addItemRelation($item, 'related_grid_serializer');
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'initSerializerBlock'), 'related_grid_serializer', function ($block) { return $block->initSerializerBlock('catalog.product.edit.tab.related', 'getSelectedRelatedProducts', 'links[related]', 'products_related'); }, array(0 => 'root', 1 => 'related_grid_serializer')), false);
+$this->addItemRelation($item, 'related_grid_serializer');
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addColumnInputName'), 'related_grid_serializer', function ($block) { return $block->addColumnInputName('position'); }, array(0 => 'root', 1 => 'related_grid_serializer')), false);
+$this->addItemRelation($item, 'related_grid_serializer');
+$this->addItemRelation($item, 'root');

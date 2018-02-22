@@ -1,0 +1,13 @@
+<?php $this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Remove('js_cookie'));
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'page/html', 'name' => 'root', 'output' => 'toHtml', 'template' => 'page/empty.phtml'), 'root', null, array()), false);
+$this->addItemRelation($item, 'root');
+$this->addItemRelation($item, NULL);
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'page/html_head', 'name' => 'head', 'as' => 'head', 'template' => 'oauth/authorize/head-simple.phtml'), 'head', 'root', array()), false);
+$this->addItemRelation($item, 'head');
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addCss'), 'head', function ($block) { return $block->addCss('css/oauth-simple.css'); }, array(0 => 'root')), false);
+$this->addItemRelation($item, 'head');
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'core/text_list', 'name' => 'content'), 'content', 'root', array()), false);
+$this->addItemRelation($item, 'content');
+$this->addItemRelation($item, 'root');

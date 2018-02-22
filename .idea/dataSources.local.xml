@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - magento@192.168.80.3" uuid="6f053c47-5506-4ecd-85e6-7eb56f376d4e">
+      <secret-storage>memory</secret-storage>
+      <user-name>root</user-name>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,3 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addLink', 'translate' => 'label title', 'module' => 'customer'), 'top.links', function ($block) { return $block->addLink(Mage::helper('customer')->__('Log In'), Mage::helper('customer')->getLoginUrl(), Mage::helper('customer')->__('Log In'), '', '', '100'); }, array()), false);
+$this->addItemRelation($item, 'top.links');
+$this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Remove('reorder'));

@@ -1,0 +1,10 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setTitle', 'translate' => 'title', 'module' => 'contacts'), 'head', function ($block) { return $block->setTitle(Mage::helper('contacts')->__('Contact Us')); }, array()), false);
+$this->addItemRelation($item, 'head');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setTemplate'), 'root', function ($block) { return $block->setTemplate('page/2columns-left.phtml'); }, array()), false);
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setHeaderTitle', 'translate' => 'title', 'module' => 'contacts'), 'root', function ($block) { return $block->setHeaderTitle(Mage::helper('contacts')->__('Contact Us')); }, array()), false);
+$this->addItemRelation($item, 'root');
+$this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Include('cms_menu'));
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'core/template', 'name' => 'contactForm', 'template' => 'contacts/form.phtml'), 'contactForm', 'content', array()), false);
+$this->addItemRelation($item, 'contactForm');
+$this->addItemRelation($item, 'content');

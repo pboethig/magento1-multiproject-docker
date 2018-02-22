@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Pebo_Unittest>
+      <version>0.1.0</version>
+    </Pebo_Unittest>
+  </modules>
+  <frontend>
+    <routers>
+      <unittest>
+        <use>standard</use>
+          <args>
+            <module>Pebo_Unittest</module>
+            <frontName>unittest</frontName>
+          </args>
+      </unittest>
+    </routers>
+		<layout>
+		  <updates>
+			<unittest>
+			  <file>pebo/unittest.xml</file>
+			</unittest>
+		  </updates>
+		</layout>
+  </frontend>
+  <global>
+    <helpers>
+      <unittest>
+        <class>Pebo_Unittest_Helper</class>
+      </unittest>
+    </helpers>
+	<blocks>
+	  <unittest>
+		<class>Pebo_Unittest_Block</class>
+	  </unittest>
+	</blocks>
+      <phpunit>
+          <suite>
+              <modules>
+                  <Pebo_Unittest />
+              </modules>
+          </suite>
+      </phpunit>
+  </global>
+</config> 

@@ -1,0 +1,2 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItemRender'), 'items', function ($block) { return $block->addItemRender('bundle', 'bundle/sales_order_items_renderer', 'bundle/email/order/items/order/default.phtml'); }, array()), false);
+$this->addItemRelation($item, 'items');

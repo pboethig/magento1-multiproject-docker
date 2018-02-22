@@ -1,0 +1,2 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addLink', 'translate' => 'label', 'module' => 'wishlist', 'ifconfig' => 'wishlist/general/active'), 'customer_account_navigation', function ($block) { return $block->addLink('wishlist', 'wishlist/', Mage::helper('wishlist')->__('My Wishlist')); }, array()), false);
+$this->addItemRelation($item, 'customer_account_navigation');

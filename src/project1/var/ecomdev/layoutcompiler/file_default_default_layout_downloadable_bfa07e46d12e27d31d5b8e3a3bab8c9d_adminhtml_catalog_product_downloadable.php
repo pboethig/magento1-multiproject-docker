@@ -1,0 +1,2 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addTab'), 'product_tabs', function ($block) { return $block->addTab('downloadable_items', 'downloadable/adminhtml_catalog_product_edit_tab_downloadable'); }, array()), false);
+$this->addItemRelation($item, 'product_tabs');

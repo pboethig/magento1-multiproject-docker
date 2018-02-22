@@ -1,0 +1,7 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'core/template', 'name' => 'top.search', 'as' => 'topSearch', 'template' => 'catalogsearch/form.mini.phtml'), 'top.search', 'header', array()), false);
+$this->addItemRelation($item, 'top.search');
+$this->addItemRelation($item, 'header');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addLink', 'translate' => 'label title', 'module' => 'catalogsearch', 'ifconfig' => 'catalog/seo/search_terms'), 'footer_links', function ($block) { return $block->addLink(Mage::helper('catalogsearch')->__('Search Terms'), Mage::helper('catalogsearch')->getSearchTermUrl(), Mage::helper('catalogsearch')->__('Search Terms')); }, array()), false);
+$this->addItemRelation($item, 'footer_links');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addLink', 'translate' => 'label title', 'module' => 'catalogsearch'), 'footer_links', function ($block) { return $block->addLink(Mage::helper('catalogsearch')->__('Advanced Search'), Mage::helper('catalogsearch')->getAdvancedSearchUrl(), Mage::helper('catalogsearch')->__('Advanced Search')); }, array()), false);
+$this->addItemRelation($item, 'footer_links');

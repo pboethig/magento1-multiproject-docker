@@ -1,0 +1,14 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'giftmessage/adminhtml_sales_order_view_giftoptions', 'name' => 'gift_options_link', 'template' => 'giftmessage/sales/order/view/giftoptions.phtml'), 'gift_options_link', 'order_item_extra_info', array()), false);
+$this->addItemRelation($item, 'gift_options_link');
+$this->addItemRelation($item, 'order_item_extra_info');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'giftmessage/adminhtml_sales_order_view_items', 'name' => 'gift_options_item_data', 'template' => 'giftmessage/sales/order/view/items.phtml'), 'gift_options_item_data', 'gift_options_link', array(0 => 'order_item_extra_info')), false);
+$this->addItemRelation($item, 'gift_options_item_data');
+$this->addItemRelation($item, 'gift_options_link');
+$this->addItemRelation($item, 'order_item_extra_info');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/template', 'name' => 'popup_window', 'template' => 'giftmessage/popup.phtml'), 'popup_window', 'order_tab_info', array()), false);
+$this->addItemRelation($item, 'popup_window');
+$this->addItemRelation($item, 'order_tab_info');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'giftmessage/adminhtml_sales_order_view_form', 'name' => 'gift_options_form', 'template' => 'giftmessage/giftoptionsform.phtml'), 'gift_options_form', 'popup_window', array(0 => 'order_tab_info')), false);
+$this->addItemRelation($item, 'gift_options_form');
+$this->addItemRelation($item, 'popup_window');
+$this->addItemRelation($item, 'order_tab_info');

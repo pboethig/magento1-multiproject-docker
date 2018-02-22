@@ -1,0 +1,11 @@
+<?php $this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Remove('right'));
+$this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Remove('left'));
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setTitle', 'translate' => 'title', 'module' => 'customer'), 'head', function ($block) { return $block->setTitle(Mage::helper('customer')->__('Reset a Password')); }, array()), false);
+$this->addItemRelation($item, 'head');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setTemplate'), 'root', function ($block) { return $block->setTemplate('page/1column.phtml'); }, array()), false);
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setHeaderTitle', 'translate' => 'title', 'module' => 'customer'), 'root', function ($block) { return $block->setHeaderTitle(Mage::helper('customer')->__('Reset a Password')); }, array()), false);
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'customer/account_changeforgotten', 'name' => 'changeForgottenPassword', 'template' => 'customer/form/resetforgottenpassword.phtml'), 'changeForgottenPassword', 'content', array()), false);
+$this->addItemRelation($item, 'changeForgottenPassword');
+$this->addItemRelation($item, 'content');

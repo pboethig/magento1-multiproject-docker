@@ -1,0 +1,2 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addNotice', 'translate' => 'message'), 'messages', function ($block) { return $block->addNotice(Mage::helper('core')->__('This report depends on timezone configuration. Once timezone is changed, the lifetime statistics need to be refreshed.')); }, array()), false);
+$this->addItemRelation($item, 'messages');

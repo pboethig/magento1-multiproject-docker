@@ -1,0 +1,9 @@
+a:5:{i:0;s:309:"Error in file: "/var/www/html/src/app/code/core/Mage/Catalog/sql/catalog_setup/upgrade-1.6.0.0.10-1.6.0.0.11.php" - SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.eav_entity_attribute' doesn't exist, query was: UPDATE `eav_entity_attribute` SET `sort_order` = ? WHERE (`attribute_id`='90')";i:1;s:917:"#0 /var/www/html/src/app/code/core/Mage/Core/Model/Resource/Setup.php(644): Mage::exception('Mage_Core', 'Error in file: ...')
+#1 /var/www/html/src/app/code/core/Mage/Core/Model/Resource/Setup.php(422): Mage_Core_Model_Resource_Setup->_modifyResourceDb('upgrade', '1.6.0.0', '1.6.0.0.19.1.2')
+#2 /var/www/html/src/app/code/core/Mage/Core/Model/Resource/Setup.php(327): Mage_Core_Model_Resource_Setup->_installResourceDb('1.6.0.0.19.1.2')
+#3 /var/www/html/src/app/code/core/Mage/Core/Model/Resource/Setup.php(235): Mage_Core_Model_Resource_Setup->applyUpdates()
+#4 /var/www/html/src/app/code/core/Mage/Core/Model/App.php(428): Mage_Core_Model_Resource_Setup::applyAllUpdates()
+#5 /var/www/html/src/app/code/core/Mage/Core/Model/App.php(354): Mage_Core_Model_App->_initModules()
+#6 /var/www/html/src/app/Mage.php(692): Mage_Core_Model_App->run(Array)
+#7 /var/www/html/src/index.php(83): Mage::run('', 'store')
+#8 {main}";s:3:"url";s:74:"/src/index.php/admin/dashboard/index/key/403e36e8a38d04cf2ca8c75cf0b83d71/";s:11:"script_name";s:14:"/src/index.php";s:4:"skin";s:7:"default";}

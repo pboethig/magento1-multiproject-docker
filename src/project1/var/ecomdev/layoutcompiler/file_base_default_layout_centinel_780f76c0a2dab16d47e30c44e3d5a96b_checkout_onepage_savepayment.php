@@ -1,0 +1,12 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'centinel/authentication', 'name' => 'centinel.frame', 'template' => 'centinel/authentication.phtml'), 'centinel.frame', 'checkout.onepage.review.info.items.before', array()), false);
+$this->addItemRelation($item, 'centinel.frame');
+$this->addItemRelation($item, 'checkout.onepage.review.info.items.before');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addRelatedBlock'), 'centinel.frame', function ($block) { return $block->addRelatedBlock('checkout-review-submit'); }, array(0 => 'checkout.onepage.review.info.items.before')), false);
+$this->addItemRelation($item, 'centinel.frame');
+$this->addItemRelation($item, 'checkout.onepage.review.info.items.before');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addRelatedBlock'), 'centinel.frame', function ($block) { return $block->addRelatedBlock('checkout-review-table-wrapper'); }, array(0 => 'checkout.onepage.review.info.items.before')), false);
+$this->addItemRelation($item, 'centinel.frame');
+$this->addItemRelation($item, 'checkout.onepage.review.info.items.before');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setAuthenticationStartMode'), 'centinel.frame', function ($block) { return $block->setAuthenticationStartMode('instant'); }, array(0 => 'checkout.onepage.review.info.items.before')), false);
+$this->addItemRelation($item, 'centinel.frame');
+$this->addItemRelation($item, 'checkout.onepage.review.info.items.before');

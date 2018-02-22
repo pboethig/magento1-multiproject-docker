@@ -1,0 +1,15 @@
+<?php $this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Include('checkout_multishipping'));
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'checkout/multishipping_billing', 'name' => 'checkout_billing', 'template' => 'checkout/multishipping/billing.phtml'), 'checkout_billing', 'content', array()), false);
+$this->addItemRelation($item, 'checkout_billing');
+$this->addItemRelation($item, 'content');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setMethodFormTemplate'), 'checkout_billing', function ($block) { return $block->setMethodFormTemplate('purchaseorder', 'payment/form/purchaseorder.phtml'); }, array(0 => 'content')), false);
+$this->addItemRelation($item, 'checkout_billing');
+$this->addItemRelation($item, 'content');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'core/text_list', 'name' => 'payment_methods_before', 'translate' => 'label'), 'payment_methods_before', 'checkout_billing', array(0 => 'content')), false);
+$this->addItemRelation($item, 'payment_methods_before');
+$this->addItemRelation($item, 'checkout_billing');
+$this->addItemRelation($item, 'content');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'core/text_list', 'name' => 'payment_methods_after', 'translate' => 'label'), 'payment_methods_after', 'checkout_billing', array(0 => 'content')), false);
+$this->addItemRelation($item, 'payment_methods_after');
+$this->addItemRelation($item, 'checkout_billing');
+$this->addItemRelation($item, 'content');

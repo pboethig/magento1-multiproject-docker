@@ -1,0 +1,3 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/catalog_product_edit_tab_super_config_grid', 'name' => 'admin.product.edit.tab.super.config.grid', 'output' => 'toHtml'), 'admin.product.edit.tab.super.config.grid', null, array()), false);
+$this->addItemRelation($item, 'admin.product.edit.tab.super.config.grid');
+$this->addItemRelation($item, NULL);

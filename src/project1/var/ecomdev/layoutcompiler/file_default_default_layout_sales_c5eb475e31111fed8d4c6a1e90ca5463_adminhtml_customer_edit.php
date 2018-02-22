@@ -1,0 +1,4 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addTab'), 'customer_edit_tabs', function ($block) { return $block->addTab('customer_edit_tab_agreements', 'sales/adminhtml_customer_edit_tab_agreement'); }, array()), false);
+$this->addItemRelation($item, 'customer_edit_tabs');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addTab'), 'customer_edit_tabs', function ($block) { return $block->addTab('customer_edit_tab_recurring_profile', 'sales/adminhtml_customer_edit_tab_recurring_profile'); }, array()), false);
+$this->addItemRelation($item, 'customer_edit_tabs');

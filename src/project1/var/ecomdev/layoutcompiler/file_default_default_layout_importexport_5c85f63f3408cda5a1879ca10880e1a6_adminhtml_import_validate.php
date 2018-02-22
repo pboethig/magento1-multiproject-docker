@@ -1,0 +1,3 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'importexport/adminhtml_import_frame_result', 'template' => 'importexport/import/frame/result.phtml', 'name' => 'import.frame.result', 'alias' => 'import_frame_result', 'output' => 'toHtml'), 'import.frame.result', null, array()), false);
+$this->addItemRelation($item, 'import.frame.result');
+$this->addItemRelation($item, NULL);

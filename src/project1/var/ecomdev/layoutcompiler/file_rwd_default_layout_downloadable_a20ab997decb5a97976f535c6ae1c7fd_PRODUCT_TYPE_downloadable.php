@@ -1,0 +1,15 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'downloadable/catalog_product_view_type', 'name' => 'product.info.downloadable', 'as' => 'product_type_availability', 'template' => 'downloadable/catalog/product/type.phtml'), 'product.info.downloadable', 'product.info', array()), false);
+$this->addItemRelation($item, 'product.info.downloadable');
+$this->addItemRelation($item, 'product.info');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'cataloginventory/stockqty_default', 'name' => 'product.info.downloadable.extra', 'as' => 'product_type_data_extra', 'template' => 'cataloginventory/stockqty/default.phtml'), 'product.info.downloadable.extra', 'product.info.downloadable', array(0 => 'product.info')), false);
+$this->addItemRelation($item, 'product.info.downloadable.extra');
+$this->addItemRelation($item, 'product.info.downloadable');
+$this->addItemRelation($item, 'product.info');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'downloadable/catalog_product_samples', 'name' => 'product.info.downloadable.samples', 'as' => 'product_type_data', 'template' => 'downloadable/catalog/product/samples.phtml'), 'product.info.downloadable.samples', 'product.info', array()), false);
+$this->addItemRelation($item, 'product.info.downloadable.samples');
+$this->addItemRelation($item, 'product.info');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'downloadable/catalog_product_links', 'name' => 'product.info.downloadable.options', 'as' => 'type_downloadable_options', 'before' => '-', 'template' => 'downloadable/catalog/product/links.phtml'), 'product.info.downloadable.options', 'product.info.options.wrapper', array()), false);
+$this->addItemRelation($item, 'product.info.downloadable.options');
+$this->addItemRelation($item, 'product.info.options.wrapper');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'insert'), 'product.info.options.wrapper', function ($block) { return $block->insert('product.info.downloadable.options'); }, array()), false);
+$this->addItemRelation($item, 'product.info.options.wrapper');

@@ -1,0 +1,3 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'sales/order_recent', 'name' => 'customer_account_dashboard_top', 'as' => 'top', 'template' => 'sales/order/recent.phtml'), 'customer_account_dashboard_top', 'customer_account_dashboard', array()), false);
+$this->addItemRelation($item, 'customer_account_dashboard_top');
+$this->addItemRelation($item, 'customer_account_dashboard');

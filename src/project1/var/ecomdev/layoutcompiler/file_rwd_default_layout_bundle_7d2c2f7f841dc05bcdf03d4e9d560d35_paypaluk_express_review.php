@@ -1,0 +1,2 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItemRender'), 'paypal.express.review.details', function ($block) { return $block->addItemRender('bundle', 'bundle/checkout_cart_item_renderer', 'checkout/onepage/review/item.phtml'); }, array()), false);
+$this->addItemRelation($item, 'paypal.express.review.details');

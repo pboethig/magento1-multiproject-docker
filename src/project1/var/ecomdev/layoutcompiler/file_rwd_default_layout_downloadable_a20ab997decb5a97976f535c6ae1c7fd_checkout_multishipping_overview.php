@@ -1,0 +1,2 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItemRender'), 'checkout_overview', function ($block) { return $block->addItemRender('downloadable', 'downloadable/checkout_cart_item_renderer', 'downloadable/checkout/multishipping/item/downloadable.phtml'); }, array()), false);
+$this->addItemRelation($item, 'checkout_overview');

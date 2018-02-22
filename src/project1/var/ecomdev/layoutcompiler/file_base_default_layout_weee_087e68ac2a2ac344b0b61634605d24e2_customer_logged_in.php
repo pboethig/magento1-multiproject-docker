@@ -1,0 +1,2 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItem'), 'head', function ($block) { return $block->addItem('js', 'varien/weee.js'); }, array()), false);
+$this->addItemRelation($item, 'head');

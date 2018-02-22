@@ -1,0 +1,18 @@
+<?php $this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Remove('seo.sitemap.pager.top'));
+$this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Remove('seo.sitemap.pager.bottom'));
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'catalog/seo_sitemap_tree_pager', 'name' => 'seo.sitemap.tree.pager.top', 'as' => 'pager_top', 'template' => 'page/html/pager.phtml'), 'seo.sitemap.tree.pager.top', 'seo.sitemap.container', array()), false);
+$this->addItemRelation($item, 'seo.sitemap.tree.pager.top');
+$this->addItemRelation($item, 'seo.sitemap.container');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'catalog/seo_sitemap_tree_pager', 'name' => 'seo.sitemap.tree.pager.bottom', 'as' => 'pager_bottom', 'template' => 'page/html/pager.phtml'), 'seo.sitemap.tree.pager.bottom', 'seo.sitemap.container', array()), false);
+$this->addItemRelation($item, 'seo.sitemap.tree.pager.bottom');
+$this->addItemRelation($item, 'seo.sitemap.container');
+$this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Remove('seo.sitemap.sitemap'));
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'catalog/seo_sitemap_tree_category', 'name' => 'seo.sitemap.sitemap_tree', 'as' => 'sitemap', 'after' => 'pager_top', 'template' => 'catalog/seo/tree.phtml'), 'seo.sitemap.sitemap_tree', 'seo.sitemap.container', array()), false);
+$this->addItemRelation($item, 'seo.sitemap.sitemap_tree');
+$this->addItemRelation($item, 'seo.sitemap.container');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'bindPager'), 'seo.sitemap.sitemap_tree', function ($block) { return $block->bindPager('seo.sitemap.tree.pager.top'); }, array(0 => 'seo.sitemap.container')), false);
+$this->addItemRelation($item, 'seo.sitemap.sitemap_tree');
+$this->addItemRelation($item, 'seo.sitemap.container');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'bindPager'), 'seo.sitemap.sitemap_tree', function ($block) { return $block->bindPager('seo.sitemap.tree.pager.bottom'); }, array(0 => 'seo.sitemap.container')), false);
+$this->addItemRelation($item, 'seo.sitemap.sitemap_tree');
+$this->addItemRelation($item, 'seo.sitemap.container');

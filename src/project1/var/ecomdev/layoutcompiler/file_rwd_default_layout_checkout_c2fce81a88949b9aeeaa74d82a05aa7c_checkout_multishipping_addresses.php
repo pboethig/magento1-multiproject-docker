@@ -1,0 +1,16 @@
+<?php $this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Include('checkout_multishipping'));
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'checkout/multishipping_addresses', 'name' => 'checkout_addresses', 'template' => 'checkout/multishipping/addresses.phtml'), 'checkout_addresses', 'content', array()), false);
+$this->addItemRelation($item, 'checkout_addresses');
+$this->addItemRelation($item, 'content');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItemRender'), 'checkout_addresses', function ($block) { return $block->addItemRender('default', 'checkout/cart_item_renderer', 'checkout/multishipping/item/default.phtml'); }, array(0 => 'content')), false);
+$this->addItemRelation($item, 'checkout_addresses');
+$this->addItemRelation($item, 'content');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItemRender'), 'checkout_addresses', function ($block) { return $block->addItemRender('grouped', 'checkout/cart_item_renderer_grouped', 'checkout/multishipping/item/default.phtml'); }, array(0 => 'content')), false);
+$this->addItemRelation($item, 'checkout_addresses');
+$this->addItemRelation($item, 'content');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItemRender'), 'checkout_addresses', function ($block) { return $block->addItemRender('configurable', 'checkout/cart_item_renderer_configurable', 'checkout/multishipping/item/default.phtml'); }, array(0 => 'content')), false);
+$this->addItemRelation($item, 'checkout_addresses');
+$this->addItemRelation($item, 'content');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'core/text_list', 'name' => 'additional.product.info', 'translate' => 'label'), 'additional.product.info', null, array()), false);
+$this->addItemRelation($item, 'additional.product.info');
+$this->addItemRelation($item, NULL);

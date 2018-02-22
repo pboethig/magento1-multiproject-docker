@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Magento Test Suite" tests="75" assertions="174" failures="0" errors="1" time="0.542345">
+    <testsuite name="Pebo_Unittest_Test_Block_IndexTest" file="/var/www/html/src/app/code/local/Pebo/Unittest/Test/Block/IndexTest.php" tests="1" assertions="0" failures="0" errors="1" time="0.001025">
+      <testcase name="priceCalculation" class="Pebo_Unittest_Test_Block_IndexTest" file="/var/www/html/src/app/code/local/Pebo/Unittest/Test/Block/IndexTest.php" line="12" assertions="0" time="0.001025">
+        <error type="Exception">Pebo_Unittest_Test_Block_IndexTest::priceCalculation
+Exception: Warning: Missing argument 1 for Pebo_Unittest_Test_Block_IndexTest::priceCalculation()  in /var/www/html/src/app/code/local/Pebo/Unittest/Test/Block/IndexTest.php on line 12
+
+/var/www/html/src/app/code/core/Mage/Core/functions.php:245
+/var/www/html/src/app/code/local/Pebo/Unittest/Test/Block/IndexTest.php:12
+/var/www/html/src/vendor/phpunit/phpunit/phpunit:55
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Magento Test Suite" tests="74" assertions="174" failures="0" errors="0" time="0.541320">
+      <testsuite name="EcomDev_PHPUnitTest_Test_Model_Fixture" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Model/Fixture.php" tests="2" assertions="1" failures="0" errors="0" time="0.183622">
+        <testcase name="testFixtureArrayMerge" class="EcomDev_PHPUnitTest_Test_Model_Fixture" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Model/Fixture.php" line="8" assertions="0" time="0.090593"/>
+        <testcase name="testLoadClassBeforeMethodFixtures" class="EcomDev_PHPUnitTest_Test_Model_Fixture" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Model/Fixture.php" line="19" assertions="1" time="0.093029"/>
+      </testsuite>
+      <testsuite name="EcomDev_PHPUnitTest_Test_Helper_Customer" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Customer.php" tests="3" assertions="5" failures="0" errors="0" time="0.136524">
+        <testsuite name="EcomDev_PHPUnitTest_Test_Helper_Customer::testCustomerSession" tests="3" assertions="5" failures="0" errors="0" time="0.136524">
+          <testcase name="testCustomerSession with data set &quot;john_doe&quot;" assertions="2" time="0.121550"/>
+          <testcase name="testCustomerSession with data set &quot;jane_doe&quot;" assertions="2" time="0.012582"/>
+          <testcase name="testCustomerSession with data set &quot;unknown_customer&quot;" assertions="1" time="0.002392"/>
+        </testsuite>
+      </testsuite>
+      <testsuite name="EcomDev_PHPUnitTest_Test_Helper_Call" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Call.php" tests="2" assertions="3" failures="0" errors="0" time="0.003552">
+        <testcase name="testCall" class="EcomDev_PHPUnitTest_Test_Helper_Call" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Call.php" line="50" assertions="1" time="0.002396"/>
+        <testcase name="testCallError" class="EcomDev_PHPUnitTest_Test_Helper_Call" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Call.php" line="61" assertions="2" time="0.001156"/>
+      </testsuite>
+      <testsuite name="EcomDev_PHPUnitTest_Test_Helper_Observer" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Observer.php" tests="2" assertions="13" failures="0" errors="0" time="0.001841">
+        <testcase name="testItStubsObserver" class="EcomDev_PHPUnitTest_Test_Helper_Observer" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Observer.php" line="5" assertions="6" time="0.000888"/>
+        <testcase name="testItStubsObserverWithEventName" class="EcomDev_PHPUnitTest_Test_Helper_Observer" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Observer.php" line="19" assertions="7" time="0.000953"/>
+      </testsuite>
+      <testsuite name="EcomDev_PHPUnitTest_Test_Helper_Session" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Session.php" tests="4" assertions="17" failures="0" errors="0" time="0.052876">
+        <testcase name="testMockSession" class="EcomDev_PHPUnitTest_Test_Helper_Session" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Session.php" line="9" assertions="3" time="0.006303"/>
+        <testcase name="testAdminSessionAllRights" class="EcomDev_PHPUnitTest_Test_Helper_Session" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Session.php" line="23" assertions="4" time="0.036359"/>
+        <testcase name="testAdminSessionOnlyCatalog" class="EcomDev_PHPUnitTest_Test_Helper_Session" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Session.php" line="36" assertions="5" time="0.005180"/>
+        <testcase name="testAdminSessionOnlyCatalogProduct" class="EcomDev_PHPUnitTest_Test_Helper_Session" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Session.php" line="50" assertions="5" time="0.005034"/>
+      </testsuite>
+      <testsuite name="EcomDev_PHPUnitTest_Test_Helper_Mock" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Mock.php" tests="4" assertions="16" failures="0" errors="0" time="0.003085">
+        <testcase name="testMockClassAlias" class="EcomDev_PHPUnitTest_Test_Helper_Mock" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Mock.php" line="21" assertions="4" time="0.000961"/>
+        <testcase name="testModelMock" class="EcomDev_PHPUnitTest_Test_Helper_Mock" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Mock.php" line="34" assertions="4" time="0.000613"/>
+        <testcase name="testBlockMock" class="EcomDev_PHPUnitTest_Test_Helper_Mock" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Mock.php" line="47" assertions="4" time="0.000761"/>
+        <testcase name="testHelperMock" class="EcomDev_PHPUnitTest_Test_Helper_Mock" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Helper/Mock.php" line="60" assertions="4" time="0.000750"/>
+      </testsuite>
+      <testsuite name="EcomDev_PHPUnitTest_Test_Lib_Helper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Helper.php" tests="12" assertions="42" failures="0" errors="0" time="0.030233">
+        <testcase name="testAdd" class="EcomDev_PHPUnitTest_Test_Lib_Helper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Helper.php" line="86" assertions="1" time="0.002552"/>
+        <testcase name="testAddOrdered" class="EcomDev_PHPUnitTest_Test_Lib_Helper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Helper.php" line="101" assertions="4" time="0.004012"/>
+        <testcase name="testAddWrongPosition" class="EcomDev_PHPUnitTest_Test_Lib_Helper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Helper.php" line="142" assertions="2" time="0.000868"/>
+        <testcase name="testRemove" class="EcomDev_PHPUnitTest_Test_Lib_Helper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Helper.php" line="151" assertions="5" time="0.002787"/>
+        <testcase name="testRemoveByClassName" class="EcomDev_PHPUnitTest_Test_Lib_Helper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Helper.php" line="195" assertions="3" time="0.002780"/>
+        <testcase name="testGetByAction" class="EcomDev_PHPUnitTest_Test_Lib_Helper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Helper.php" line="223" assertions="4" time="0.002478"/>
+        <testcase name="testInvokeArgs" class="EcomDev_PHPUnitTest_Test_Lib_Helper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Helper.php" line="292" assertions="5" time="0.003128"/>
+        <testcase name="testInvoke" class="EcomDev_PHPUnitTest_Test_Lib_Helper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Helper.php" line="308" assertions="3" time="0.002141"/>
+        <testcase name="testHas" class="EcomDev_PHPUnitTest_Test_Lib_Helper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Helper.php" line="321" assertions="3" time="0.001012"/>
+        <testcase name="testSetTestCase" class="EcomDev_PHPUnitTest_Test_Lib_Helper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Helper.php" line="342" assertions="4" time="0.003487"/>
+        <testcase name="testSetUp" class="EcomDev_PHPUnitTest_Test_Lib_Helper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Helper.php" line="362" assertions="4" time="0.002487"/>
+        <testcase name="testTearDown" class="EcomDev_PHPUnitTest_Test_Lib_Helper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Helper.php" line="383" assertions="4" time="0.002501"/>
+      </testsuite>
+      <testsuite name="EcomDev_PHPUnitTest_Test_Lib_AbstractHelper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/AbstractHelper.php" tests="3" assertions="9" failures="0" errors="0" time="0.003669">
+        <testcase name="testHasAction" class="EcomDev_PHPUnitTest_Test_Lib_AbstractHelper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/AbstractHelper.php" line="71" assertions="3" time="0.001444"/>
+        <testcase name="testInvokeAction" class="EcomDev_PHPUnitTest_Test_Lib_AbstractHelper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/AbstractHelper.php" line="84" assertions="4" time="0.001650"/>
+        <testcase name="testSetTestCase" class="EcomDev_PHPUnitTest_Test_Lib_AbstractHelper" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/AbstractHelper.php" line="99" assertions="2" time="0.000575"/>
+      </testsuite>
+      <testsuite name="EcomDev_PHPUnitTest_Test_Lib_Mock_Proxy" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Mock/Proxy.php" tests="10" assertions="25" failures="0" errors="0" time="0.006174">
+        <testcase name="testAddMethod" class="EcomDev_PHPUnitTest_Test_Lib_Mock_Proxy" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Mock/Proxy.php" line="40" assertions="3" time="0.001042"/>
+        <testcase name="testRemoveMethod" class="EcomDev_PHPUnitTest_Test_Lib_Mock_Proxy" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Mock/Proxy.php" line="49" assertions="2" time="0.000716"/>
+        <testcase name="testPreserveMethods" class="EcomDev_PHPUnitTest_Test_Lib_Mock_Proxy" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Mock/Proxy.php" line="62" assertions="2" time="0.000425"/>
+        <testcase name="testGetMockInstance" class="EcomDev_PHPUnitTest_Test_Lib_Mock_Proxy" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Mock/Proxy.php" line="69" assertions="3" time="0.000937"/>
+        <testcase name="testGetMockClass" class="EcomDev_PHPUnitTest_Test_Lib_Mock_Proxy" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Mock/Proxy.php" line="87" assertions="1" time="0.000428"/>
+        <testcase name="testExpects" class="EcomDev_PHPUnitTest_Test_Lib_Mock_Proxy" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Mock/Proxy.php" line="95" assertions="3" time="0.000717"/>
+        <testcase name="testGetInvocationMocker" class="EcomDev_PHPUnitTest_Test_Lib_Mock_Proxy" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Mock/Proxy.php" line="105" assertions="3" time="0.000489"/>
+        <testcase name="testGetStaticInvocationMocker" class="EcomDev_PHPUnitTest_Test_Lib_Mock_Proxy" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Mock/Proxy.php" line="113" assertions="3" time="0.000396"/>
+        <testcase name="testVerify" class="EcomDev_PHPUnitTest_Test_Lib_Mock_Proxy" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Mock/Proxy.php" line="120" assertions="3" time="0.000367"/>
+        <testcase name="testCall" class="EcomDev_PHPUnitTest_Test_Lib_Mock_Proxy" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Mock/Proxy.php" line="128" assertions="2" time="0.000657"/>
+      </testsuite>
+      <testsuite name="EcomDev_PHPUnitTest_Test_Lib_AbstractConstraint" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/AbstractConstraint.php" tests="7" assertions="11" failures="0" errors="0" time="0.004100">
+        <testsuite name="EcomDev_PHPUnitTest_Test_Lib_AbstractConstraint::testCompareValues" tests="7" assertions="11" failures="0" errors="0" time="0.004100">
+          <testcase name="testCompareValues with data set #0" assertions="1" time="0.000593"/>
+          <testcase name="testCompareValues with data set #1" assertions="2" time="0.000783"/>
+          <testcase name="testCompareValues with data set #2" assertions="2" time="0.000734"/>
+          <testcase name="testCompareValues with data set #3" assertions="1" time="0.000447"/>
+          <testcase name="testCompareValues with data set #4" assertions="1" time="0.000440"/>
+          <testcase name="testCompareValues with data set #5" assertions="2" time="0.000547"/>
+          <testcase name="testCompareValues with data set #6" assertions="2" time="0.000556"/>
+        </testsuite>
+      </testsuite>
+      <testsuite name="EcomDev_PHPUnitTest_Test_Lib_Constraint_Config_Resource_Script" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Constraint/Config/Resource/Script.php" tests="14" assertions="14" failures="0" errors="0" time="0.110091">
+        <testsuite name="EcomDev_PHPUnitTest_Test_Lib_Constraint_Config_Resource_Script::testParseVersions" tests="6" assertions="6" failures="0" errors="0" time="0.074537">
+          <testcase name="testParseVersions with data set &quot;directory_one_valid&quot;" assertions="1" time="0.013993"/>
+          <testcase name="testParseVersions with data set &quot;directory_two_valid&quot;" assertions="1" time="0.012337"/>
+          <testcase name="testParseVersions with data set &quot;directory_one_data_scheme_valid&quot;" assertions="1" time="0.012636"/>
+          <testcase name="testParseVersions with data set &quot;directory_one_invalid&quot;" assertions="1" time="0.010459"/>
+          <testcase name="testParseVersions with data set &quot;directory_two_invalid&quot;" assertions="1" time="0.012198"/>
+          <testcase name="testParseVersions with data set &quot;directory_one_data_scheme_invalid&quot;" assertions="1" time="0.012914"/>
+        </testsuite>
+        <testsuite name="EcomDev_PHPUnitTest_Test_Lib_Constraint_Config_Resource_Script::testGetVersionScriptsDiff" tests="8" assertions="8" failures="0" errors="0" time="0.035554">
+          <testcase name="testGetVersionScriptsDiff with data set &quot;from_1.0.0_to_1.0.1_one&quot;" assertions="1" time="0.004607"/>
+          <testcase name="testGetVersionScriptsDiff with data set &quot;from_1.0.0_to_1.0.5_one&quot;" assertions="1" time="0.004294"/>
+          <testcase name="testGetVersionScriptsDiff with data set &quot;to_1.0.5_one&quot;" assertions="1" time="0.003778"/>
+          <testcase name="testGetVersionScriptsDiff with data set &quot;from_1.0.0_one&quot;" assertions="1" time="0.004546"/>
+          <testcase name="testGetVersionScriptsDiff with data set &quot;from_1.0.0_to_1.0.1_one_invalid&quot;" assertions="1" time="0.004231"/>
+          <testcase name="testGetVersionScriptsDiff with data set &quot;from_1.0.0_to_1.0.5_one_invalid&quot;" assertions="1" time="0.005062"/>
+          <testcase name="testGetVersionScriptsDiff with data set &quot;from_1.0.0_one_invalid&quot;" assertions="1" time="0.004458"/>
+          <testcase name="testGetVersionScriptsDiff with data set &quot;to_1.0.5_one_invalid&quot;" assertions="1" time="0.004578"/>
+        </testsuite>
+      </testsuite>
+      <testsuite name="EcomDev_PHPUnitTest_Test_Lib_Constraint_Config_Node" file="/var/www/html/src/app/code/community/EcomDev/PHPUnitTest/Test/Lib/Constraint/Config/Node.php" tests="11" assertions="18" failures="0" errors="0" time="0.005554">
+        <testsuite name="EcomDev_PHPUnitTest_Test_Lib_Constraint_Config_Node::testConstructorAccepts" tests="6" assertions="6" failures="0" errors="0" time="0.002844">
+          <testcase name="testConstructorAccepts with data set #0" assertions="1" time="0.000847"/>
+          <testcase name="testConstructorAccepts with data set #1" assertions="1" time="0.000416"/>
+          <testcase name="testConstructorAccepts with data set #2" assertions="1" time="0.000405"/>
+          <testcase name="testConstructorAccepts with data set #3" assertions="1" time="0.000396"/>
+          <testcase name="testConstructorAccepts with data set #4" assertions="1" time="0.000390"/>
+          <testcase name="testConstructorAccepts with data set #5" assertions="1" time="0.000390"/>
+        </testsuite>
+        <testsuite name="EcomDev_PHPUnitTest_Test_Lib_Constraint_Config_Node::testEqualsXml" tests="3" assertions="6" failures="0" errors="0" time="0.001380">
+          <testcase name="testEqualsXml with data set #0" assertions="2" time="0.000492"/>
+          <testcase name="testEqualsXml with data set #1" assertions="2" time="0.000439"/>
+          <testcase name="testEqualsXml with data set #2" assertions="2" time="0.000449"/>
+        </testsuite>
+        <testsuite name="EcomDev_PHPUnitTest_Test_Lib_Constraint_Config_Node::testEqualsXmlFailure" tests="2" assertions="6" failures="0" errors="0" time="0.001330">
+          <testcase name="testEqualsXmlFailure with data set #0" assertions="3" time="0.000786"/>
+          <testcase name="testEqualsXmlFailure with data set #1" assertions="3" time="0.000544"/>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

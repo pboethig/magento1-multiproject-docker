@@ -1,0 +1,2 @@
+coverage_clover: build/var/phpunit/coverage-merged.xml
+json_path: build/var/coveralls-upload.json

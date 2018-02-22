@@ -1,0 +1,13 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setActive'), 'menu', function ($block) { return $block->setActive('catalog/products'); }, array()), false);
+$this->addItemRelation($item, 'menu');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/catalog_product', 'name' => 'products_list'), 'products_list', 'content', array()), false);
+$this->addItemRelation($item, 'products_list');
+$this->addItemRelation($item, 'content');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/store_switcher', 'name' => 'store_switcher', 'as' => 'store_switcher'), 'store_switcher', 'products_list', array(0 => 'content')), false);
+$this->addItemRelation($item, 'store_switcher');
+$this->addItemRelation($item, 'products_list');
+$this->addItemRelation($item, 'content');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setUseConfirm'), 'store_switcher', function ($block) { return $block->setUseConfirm('0'); }, array(0 => 'content', 1 => 'products_list')), false);
+$this->addItemRelation($item, 'store_switcher');
+$this->addItemRelation($item, 'content');
+$this->addItemRelation($item, 'products_list');

@@ -1,0 +1,11 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setTemplate'), 'root', function ($block) { return $block->setTemplate('page/popup.phtml'); }, array()), false);
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addJs'), 'head', function ($block) { return $block->addJs('scriptaculous/scriptaculous.js'); }, array()), false);
+$this->addItemRelation($item, 'head');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addJs'), 'head', function ($block) { return $block->addJs('varien/product.js'); }, array()), false);
+$this->addItemRelation($item, 'head');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'unsetChild'), 'head', function ($block) { return $block->unsetChild('head.viewport'); }, array()), false);
+$this->addItemRelation($item, 'head');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'catalog/product_compare_list', 'name' => 'catalog.compare.list', 'template' => 'catalog/product/compare/list.phtml'), 'catalog.compare.list', 'content', array()), false);
+$this->addItemRelation($item, 'catalog.compare.list');
+$this->addItemRelation($item, 'content');

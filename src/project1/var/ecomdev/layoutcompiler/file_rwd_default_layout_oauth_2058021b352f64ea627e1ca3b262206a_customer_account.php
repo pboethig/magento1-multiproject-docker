@@ -1,0 +1,2 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addLink', 'translate' => 'label', 'module' => 'oauth'), 'customer_account_navigation', function ($block) { return $block->addLink('OAuth Customer Tokens', 'oauth/customer_token', Mage::helper('oauth')->__('My Applications')); }, array()), false);
+$this->addItemRelation($item, 'customer_account_navigation');

@@ -1,0 +1,4 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItemRender'), 'checkout.cart', function ($block) { return $block->addItemRender('bundle', 'bundle/checkout_cart_item_renderer', 'checkout/cart/item/default.phtml'); }, array()), false);
+$this->addItemRelation($item, 'checkout.cart');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addPriceBlockType'), 'checkout.cart.crosssell', function ($block) { return $block->addPriceBlockType('bundle', 'bundle/catalog_product_price', 'bundle/catalog/product/price.phtml'); }, array()), false);
+$this->addItemRelation($item, 'checkout.cart.crosssell');

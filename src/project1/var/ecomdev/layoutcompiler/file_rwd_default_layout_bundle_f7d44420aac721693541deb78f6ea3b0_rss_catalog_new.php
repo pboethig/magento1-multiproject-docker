@@ -1,0 +1,2 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addPriceBlockType'), 'rss.catalog.new', function ($block) { return $block->addPriceBlockType('bundle', 'bundle/catalog_product_price', 'bundle/rss/catalog/product/price.phtml'); }, array()), false);
+$this->addItemRelation($item, 'rss.catalog.new');

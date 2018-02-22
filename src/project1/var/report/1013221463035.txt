@@ -1,0 +1,19 @@
+a:5:{i:0;s:54:"Invalid method Mage_Page_Block_Html::index(Array
+(
+)
+)";i:1;s:1750:"#0 /var/www/html/src/app/design/frontend/base/default/template/pebo/unittest/pebo.phtml(4): Varien_Object->__call('index', Array)
+#1 /var/www/html/src/app/design/frontend/base/default/template/pebo/unittest/pebo.phtml(4): Mage_Page_Block_Html->index()
+#2 /var/www/html/src/app/code/core/Mage/Core/Block/Template.php(241): include('/var/www/html/s...')
+#3 /var/www/html/src/app/code/core/Mage/Core/Block/Template.php(272): Mage_Core_Block_Template->fetchView('frontend/base/d...')
+#4 /var/www/html/src/app/code/core/Mage/Core/Block/Template.php(286): Mage_Core_Block_Template->renderView()
+#5 /var/www/html/src/app/code/core/Mage/Core/Block/Abstract.php(920): Mage_Core_Block_Template->_toHtml()
+#6 /var/www/html/src/app/code/core/Mage/Core/Model/Layout.php(555): Mage_Core_Block_Abstract->toHtml()
+#7 /var/www/html/src/app/code/core/Mage/Core/Controller/Varien/Action.php(390): Mage_Core_Model_Layout->getOutput()
+#8 /var/www/html/src/app/code/local/Pebo/Unittest/controllers/IndexController.php(14): Mage_Core_Controller_Varien_Action->renderLayout()
+#9 /var/www/html/src/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Pebo_Unittest_IndexController->indexAction()
+#10 /var/www/html/src/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('index')
+#11 /var/www/html/src/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#12 /var/www/html/src/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#13 /var/www/html/src/app/Mage.php(692): Mage_Core_Model_App->run(Array)
+#14 /var/www/html/src/index.php(83): Mage::run('', 'store')
+#15 {main}";s:3:"url";s:19:"/src/index.php/pebo";s:11:"script_name";s:14:"/src/index.php";s:4:"skin";s:7:"default";}

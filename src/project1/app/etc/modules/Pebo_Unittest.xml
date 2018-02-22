@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Pebo_Unittest>
+      <active>true</active>
+      <codePool>local</codePool>
+      <version>0.1.0</version>
+    </Pebo_Unittest>
+  </modules>
+</config>

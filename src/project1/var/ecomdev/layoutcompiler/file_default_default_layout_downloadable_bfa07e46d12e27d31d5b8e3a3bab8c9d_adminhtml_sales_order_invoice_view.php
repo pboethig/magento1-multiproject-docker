@@ -1,0 +1,4 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItemRender'), 'invoice_items', function ($block) { return $block->addItemRender('downloadable', 'adminhtml/sales_items_renderer_default', 'downloadable/sales/order/invoice/view/items/renderer/downloadable.phtml'); }, array()), false);
+$this->addItemRelation($item, 'invoice_items');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addColumnRender'), 'invoice_items', function ($block) { return $block->addColumnRender('downloadable', 'downloadable/adminhtml_sales_items_column_downloadable_name', 'downloadable/sales/items/column/downloadable/invoice/name.phtml'); }, array()), false);
+$this->addItemRelation($item, 'invoice_items');

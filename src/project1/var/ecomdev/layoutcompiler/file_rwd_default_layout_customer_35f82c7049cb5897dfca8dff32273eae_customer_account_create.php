@@ -1,0 +1,11 @@
+<?php $this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Remove('right'));
+$this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Remove('left'));
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setTemplate'), 'root', function ($block) { return $block->setTemplate('page/1column.phtml'); }, array()), false);
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'customer/form_register', 'name' => 'customer_form_register', 'template' => 'customer/form/register.phtml'), 'customer_form_register', 'content', array()), false);
+$this->addItemRelation($item, 'customer_form_register');
+$this->addItemRelation($item, 'content');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'page/html_wrapper', 'name' => 'customer.form.register.fields.before', 'as' => 'form_fields_before', 'translate' => 'label'), 'customer.form.register.fields.before', 'customer_form_register', array(0 => 'content')), false);
+$this->addItemRelation($item, 'customer.form.register.fields.before');
+$this->addItemRelation($item, 'customer_form_register');
+$this->addItemRelation($item, 'content');

@@ -1,0 +1,15 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'core/text_list', 'name' => 'root', 'output' => 'toHtml'), 'root', null, array()), false);
+$this->addItemRelation($item, 'root');
+$this->addItemRelation($item, NULL);
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/catalog_product_edit_tab_crosssell', 'name' => 'catalog.product.edit.tab.crosssell'), 'catalog.product.edit.tab.crosssell', 'root', array()), false);
+$this->addItemRelation($item, 'catalog.product.edit.tab.crosssell');
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/widget_grid_serializer', 'name' => 'crosssell_grid_serializer'), 'crosssell_grid_serializer', 'root', array()), false);
+$this->addItemRelation($item, 'crosssell_grid_serializer');
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'initSerializerBlock'), 'crosssell_grid_serializer', function ($block) { return $block->initSerializerBlock('catalog.product.edit.tab.crosssell', 'getSelectedCrossSellProducts', 'links[crosssell]', 'products_crosssell'); }, array(0 => 'root', 1 => 'crosssell_grid_serializer')), false);
+$this->addItemRelation($item, 'crosssell_grid_serializer');
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addColumnInputName'), 'crosssell_grid_serializer', function ($block) { return $block->addColumnInputName('position'); }, array(0 => 'root', 1 => 'crosssell_grid_serializer')), false);
+$this->addItemRelation($item, 'crosssell_grid_serializer');
+$this->addItemRelation($item, 'root');

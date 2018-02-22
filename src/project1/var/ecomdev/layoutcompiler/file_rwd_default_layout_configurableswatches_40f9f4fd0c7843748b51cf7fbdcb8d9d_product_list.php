@@ -1,0 +1,10 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItem'), 'head', function ($block) { return $block->addItem('skin_js', 'js/configurableswatches/product-media.js'); }, array()), false);
+$this->addItemRelation($item, 'head');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItem'), 'head', function ($block) { return $block->addItem('skin_js', 'js/configurableswatches/swatches-list.js'); }, array()), false);
+$this->addItemRelation($item, 'head');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'core/template', 'name' => 'product_list.swatches', 'template' => 'configurableswatches/catalog/product/list/swatches.phtml'), 'product_list.swatches', 'product_list.name.after', array()), false);
+$this->addItemRelation($item, 'product_list.swatches');
+$this->addItemRelation($item, 'product_list.name.after');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'configurableswatches/catalog_media_js_list', 'name' => 'configurableswatches.media.js.list'), 'configurableswatches.media.js.list', 'product_list.after', array()), false);
+$this->addItemRelation($item, 'configurableswatches.media.js.list');
+$this->addItemRelation($item, 'product_list.after');

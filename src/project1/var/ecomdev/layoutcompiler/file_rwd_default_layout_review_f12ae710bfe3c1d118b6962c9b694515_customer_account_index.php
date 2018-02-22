@@ -1,0 +1,3 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'review/customer_recent', 'name' => 'customer_account_dashboard_info1', 'as' => 'info1', 'template' => 'review/customer/recent.phtml'), 'customer_account_dashboard_info1', 'customer_account_dashboard', array()), false);
+$this->addItemRelation($item, 'customer_account_dashboard_info1');
+$this->addItemRelation($item, 'customer_account_dashboard');

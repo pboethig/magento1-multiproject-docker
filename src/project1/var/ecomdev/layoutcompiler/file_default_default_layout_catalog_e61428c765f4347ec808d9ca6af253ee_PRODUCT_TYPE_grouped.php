@@ -1,0 +1,4 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/catalog_product_composite_fieldset_grouped', 'name' => 'product.composite.fieldset.grouped', 'before' => 'product.composite.fieldset.options', 'template' => 'catalog/product/composite/fieldset/grouped.phtml'), 'product.composite.fieldset.grouped', 'product.composite.fieldset', array()), false);
+$this->addItemRelation($item, 'product.composite.fieldset.grouped');
+$this->addItemRelation($item, 'product.composite.fieldset');
+$this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Remove('product.composite.fieldset.qty'));

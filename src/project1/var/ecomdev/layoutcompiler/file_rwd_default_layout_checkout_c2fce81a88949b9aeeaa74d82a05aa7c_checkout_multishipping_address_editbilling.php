@@ -1,0 +1,2 @@
+<?php $this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Include('checkout_multishipping'));
+$this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Include('checkout_multishipping_customer_address'));

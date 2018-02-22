@@ -1,0 +1,4 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addPriceBlockType'), 'product.info.upsell', function ($block) { return $block->addPriceBlockType('bundle', 'bundle/catalog_product_price', 'bundle/catalog/product/price.phtml'); }, array()), false);
+$this->addItemRelation($item, 'product.info.upsell');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setItemLimit'), 'product.info.upsell', function ($block) { return $block->setItemLimit('bundle', '4'); }, array()), false);
+$this->addItemRelation($item, 'product.info.upsell');

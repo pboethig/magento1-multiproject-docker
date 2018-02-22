@@ -1,0 +1,4 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItemRender'), 'creditmemo_items', function ($block) { return $block->addItemRender('downloadable', 'adminhtml/sales_items_renderer_default', 'downloadable/sales/order/creditmemo/view/items/renderer/downloadable.phtml'); }, array()), false);
+$this->addItemRelation($item, 'creditmemo_items');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addColumnRender'), 'creditmemo_items', function ($block) { return $block->addColumnRender('downloadable', 'downloadable/adminhtml_sales_items_column_downloadable_name', 'downloadable/sales/items/column/downloadable/creditmemo/name.phtml'); }, array()), false);
+$this->addItemRelation($item, 'creditmemo_items');

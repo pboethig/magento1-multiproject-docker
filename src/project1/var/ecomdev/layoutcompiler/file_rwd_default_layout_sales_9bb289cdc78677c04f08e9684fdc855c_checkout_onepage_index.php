@@ -1,0 +1,1 @@
+<?php $this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Remove('sale.reorder.sidebar'));

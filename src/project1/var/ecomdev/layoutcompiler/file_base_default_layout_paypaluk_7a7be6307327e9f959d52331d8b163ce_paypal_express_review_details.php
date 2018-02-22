@@ -1,0 +1,12 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'paypal/express_review_details', 'name' => 'root', 'output' => 'toHtml', 'template' => 'paypal/express/review/details.phtml'), 'root', null, array()), false);
+$this->addItemRelation($item, 'root');
+$this->addItemRelation($item, NULL);
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItemRender'), 'root', function ($block) { return $block->addItemRender('default', 'checkout/cart_item_renderer', 'checkout/onepage/review/item.phtml'); }, array()), false);
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItemRender'), 'root', function ($block) { return $block->addItemRender('grouped', 'checkout/cart_item_renderer_grouped', 'checkout/onepage/review/item.phtml'); }, array()), false);
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItemRender'), 'root', function ($block) { return $block->addItemRender('configurable', 'checkout/cart_item_renderer_configurable', 'checkout/onepage/review/item.phtml'); }, array()), false);
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'checkout/cart_totals', 'name' => 'paypal.express.review.details.totals', 'as' => 'totals', 'template' => 'checkout/onepage/review/totals.phtml'), 'paypal.express.review.details.totals', 'root', array()), false);
+$this->addItemRelation($item, 'paypal.express.review.details.totals');
+$this->addItemRelation($item, 'root');

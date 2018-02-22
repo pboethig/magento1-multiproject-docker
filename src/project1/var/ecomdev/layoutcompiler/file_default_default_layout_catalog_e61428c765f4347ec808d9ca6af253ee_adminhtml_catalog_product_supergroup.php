@@ -1,0 +1,15 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'core/text_list', 'name' => 'root', 'output' => 'toHtml'), 'root', null, array()), false);
+$this->addItemRelation($item, 'root');
+$this->addItemRelation($item, NULL);
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/catalog_product_edit_tab_super_group', 'name' => 'catalog.product.edit.tab.super.group'), 'catalog.product.edit.tab.super.group', 'root', array()), false);
+$this->addItemRelation($item, 'catalog.product.edit.tab.super.group');
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/widget_grid_serializer', 'name' => 'grouped_grid_serializer'), 'grouped_grid_serializer', 'root', array()), false);
+$this->addItemRelation($item, 'grouped_grid_serializer');
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'initSerializerBlock'), 'grouped_grid_serializer', function ($block) { return $block->initSerializerBlock('catalog.product.edit.tab.super.group', 'getSelectedGroupedProducts', 'links[grouped]', 'products_grouped'); }, array(0 => 'root', 1 => 'grouped_grid_serializer')), false);
+$this->addItemRelation($item, 'grouped_grid_serializer');
+$this->addItemRelation($item, 'root');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addColumnInputName'), 'grouped_grid_serializer', function ($block) { return $block->addColumnInputName(array(0 => 'qty', 1 => 'position')); }, array(0 => 'root', 1 => 'grouped_grid_serializer')), false);
+$this->addItemRelation($item, 'grouped_grid_serializer');
+$this->addItemRelation($item, 'root');

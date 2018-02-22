@@ -1,0 +1,6 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addLink', 'translate' => 'label title', 'module' => 'customer'), 'top.links', function ($block) { return $block->addLink(Mage::helper('customer')->__('My Account'), Mage::helper('customer')->getAccountUrl(), Mage::helper('customer')->__('My Account'), '', '', '10'); }, array()), false);
+$this->addItemRelation($item, 'top.links');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addLink', 'translate' => 'label title before_text', 'module' => 'customer'), 'top.links', function ($block) { return $block->addLink(Mage::helper('customer')->__('Register'), Mage::helper('customer')->getRegisterUrl(), Mage::helper('customer')->__('Register'), '', '', '100', '', ''); }, array()), false);
+$this->addItemRelation($item, 'top.links');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addLink', 'translate' => 'label title', 'module' => 'catalog'), 'footer_links2', function ($block) { return $block->addLink(Mage::helper('catalog')->__('My Account'), Mage::helper('customer')->getAccountUrl(), Mage::helper('catalog')->__('My Account')); }, array()), false);
+$this->addItemRelation($item, 'footer_links2');

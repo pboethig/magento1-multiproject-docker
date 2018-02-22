@@ -1,0 +1,11 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/dashboard', 'name' => 'dashboard'), 'dashboard', 'content', array()), false);
+$this->addItemRelation($item, 'dashboard');
+$this->addItemRelation($item, 'content');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'adminhtml/store_switcher', 'name' => 'store_switcher', 'as' => 'store_switcher', 'template' => 'store/switcher.phtml'), 'store_switcher', 'dashboard', array(0 => 'content')), false);
+$this->addItemRelation($item, 'store_switcher');
+$this->addItemRelation($item, 'dashboard');
+$this->addItemRelation($item, 'content');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setUseConfirm'), 'store_switcher', function ($block) { return $block->setUseConfirm('0'); }, array(0 => 'content', 1 => 'dashboard')), false);
+$this->addItemRelation($item, 'store_switcher');
+$this->addItemRelation($item, 'content');
+$this->addItemRelation($item, 'dashboard');

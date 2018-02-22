@@ -1,0 +1,18 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'page/html_wrapper', 'name' => 'product.info.addtocart.paypaluk.wrapper', 'translate' => 'label'), 'product.info.addtocart.paypaluk.wrapper', 'product.info.addtocart', array()), false);
+$this->addItemRelation($item, 'product.info.addtocart.paypaluk.wrapper');
+$this->addItemRelation($item, 'product.info.addtocart');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setHtmlTagName'), 'product.info.addtocart.paypaluk.wrapper', function ($block) { return $block->setHtmlTagName('p'); }, array(0 => 'product.info.addtocart')), false);
+$this->addItemRelation($item, 'product.info.addtocart.paypaluk.wrapper');
+$this->addItemRelation($item, 'product.info.addtocart');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setElementClass'), 'product.info.addtocart.paypaluk.wrapper', function ($block) { return $block->setElementClass('paypal-logo'); }, array(0 => 'product.info.addtocart')), false);
+$this->addItemRelation($item, 'product.info.addtocart.paypaluk.wrapper');
+$this->addItemRelation($item, 'product.info.addtocart');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'paypaluk/express_shortcut', 'name' => 'product.info.addtocart.paypaluk', 'template' => 'paypal/express/shortcut.phtml'), 'product.info.addtocart.paypaluk', 'product.info.addtocart.paypaluk.wrapper', array(0 => 'product.info.addtocart')), false);
+$this->addItemRelation($item, 'product.info.addtocart.paypaluk');
+$this->addItemRelation($item, 'product.info.addtocart.paypaluk.wrapper');
+$this->addItemRelation($item, 'product.info.addtocart');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setIsInCatalogProduct'), 'product.info.addtocart.paypaluk', function ($block) { return $block->setIsInCatalogProduct('1'); }, array(0 => 'product.info.addtocart', 1 => 'product.info.addtocart.paypaluk.wrapper')), false);
+$this->addItemRelation($item, 'product.info.addtocart.paypaluk');
+$this->addItemRelation($item, 'product.info.addtocart');
+$this->addItemRelation($item, 'product.info.addtocart.paypaluk.wrapper');
+$this->addItem(new EcomDev_LayoutCompiler_Layout_Item_Include('SHORTCUT_uk_popup'));

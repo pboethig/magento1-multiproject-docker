@@ -1,0 +1,2 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addItemRender'), 'checkout_addresses', function ($block) { return $block->addItemRender('bundle', 'bundle/checkout_cart_item_renderer', 'checkout/multishipping/item/default.phtml'); }, array()), false);
+$this->addItemRelation($item, 'checkout_addresses');

@@ -1,0 +1,11 @@
+<?php $this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addJs'), 'head', function ($block) { return $block->addJs('mage/centinel.js'); }, array()), false);
+$this->addItemRelation($item, 'head');
+$this->addItem($item = new EcomDev_LayoutCompiler_Layout_Item_Block(array('type' => 'centinel/authentication', 'name' => 'centinel.frame', 'template' => 'centinel/authentication.phtml'), 'centinel.frame', 'checkout.multishipping.overview.items.after', array()), false);
+$this->addItemRelation($item, 'centinel.frame');
+$this->addItemRelation($item, 'checkout.multishipping.overview.items.after');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'addRelatedBlock'), 'centinel.frame', function ($block) { return $block->addRelatedBlock('checkout-review-submit'); }, array(0 => 'checkout.multishipping.overview.items.after')), false);
+$this->addItemRelation($item, 'centinel.frame');
+$this->addItemRelation($item, 'checkout.multishipping.overview.items.after');
+$this->addItem($item = new EcomDev_LayoutCompiler_Model_Layout_Item_Action(array('method' => 'setAuthenticationStartMode'), 'centinel.frame', function ($block) { return $block->setAuthenticationStartMode('window'); }, array(0 => 'checkout.multishipping.overview.items.after')), false);
+$this->addItemRelation($item, 'centinel.frame');
+$this->addItemRelation($item, 'checkout.multishipping.overview.items.after');
