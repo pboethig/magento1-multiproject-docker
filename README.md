@@ -1,9 +1,9 @@
-# magento1-multiproject-docker
+# Magento1-multiproject-docker
 
 Based on meanbee/docker magento this is a magento 1 multiproject dev environment.
 Feel free to use and extend
 
-## prerequisits
+# Prerequisits
 - linux / ubuntu 16.04
 - docker installed
 - docker-composer installed
@@ -16,6 +16,14 @@ Feel free to use and extend
 - Redis Frontend
 - Cron machine
 - Cli machine
+- XDEBUG
+
+# Additional Magento Modules
+- Aoe_TemplateHints - Perfect way to display template information
+- EcomDev_LayoutCompiler - Compiles all layout xmls to one for performance
+- EcomDev_PHPUnit - Unittest Framework to test magento library
+- FireGento_Debug - Show modules and dependecies in adminbackend
+- Steverobbins_Redismanager - Configure and Flush Rediscache
 
 # Usage
 
