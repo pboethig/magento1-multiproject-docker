@@ -84,6 +84,12 @@ The `cli` images have a number of useful Magento tools pre-installed:
 ### Reach magento frontend
 - http://127.0.0.1:8080/src/project1
 
+### Reach magento backend
+- http://127.0.0.1:8080/src/project1/admin
+- user: admin
+- pass: admin#123
+
+
 ### Reach redis cache management frontend
 - http://127.0.0.1:8081
 
