@@ -11,7 +11,7 @@ Feel free to use and extend
 - [`5.6-fpm` (*5.6/fpm/Dockerfile*)](https://github.com/meanbee/docker-magento/blob/master/5.6/fpm/Dockerfile)
 # Usage
 
-##Start containers
+## Start containers
 
 See [docker-compose.yml](docker-compose.yml) for a sample configuration.
 
