@@ -18,3 +18,4 @@
 /mysql/data/server-key.pem
 /mysql/data/ca.pem
 /mysql/data/client-cert.pem
+!/mysql/
