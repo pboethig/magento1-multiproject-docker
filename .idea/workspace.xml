@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79ac8a4-a92f-4820-806c-bf9fa6ee9cc4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/project1/var/session/sess_f920e115ff2e36a880ac7b331d3e2ace" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/dev/tests/functional/vendor/magento/mtf" afterPath="$PROJECT_DIR$/src/project1/dev/tests/functional/vendor/magento/mtf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -81,8 +80,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="322">
-                <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <first_editor relative-caret-position="231">
+                <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -384,12 +383,12 @@
       <workItem from="1519166707878" duration="707000" />
       <workItem from="1519168061157" duration="26000" />
       <workItem from="1519168106904" duration="10607000" />
-      <workItem from="1519301337702" duration="6230000" />
+      <workItem from="1519301337702" duration="6317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55691000" />
+    <option name="totallyTimeSpent" value="55778000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -801,8 +800,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="322">
-            <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <first_editor relative-caret-position="231">
+            <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />

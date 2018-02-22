@@ -28,6 +28,7 @@ Feel free to use and extend
 # Usage
 
 ## Start containers
+- `docker-compose up`
 
 See [docker-compose.yml](docker-compose.yml) for a sample configuration.
 
